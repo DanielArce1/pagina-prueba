@@ -1,0 +1,511 @@
+/* Estilos personalizados para centrar el formulario */
+body.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #111c31;
+  }
+  
+  /*FONDO COMO EL DEL MAIN*/
+  
+  
+  
+  /* color morado: #410961
+  /* color ZUL background-color: #162747;*/
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius:28px;
+  }
+  
+  
+  .btn-iniciar {
+      background-color:#696969;
+      border-radius:28px;
+    width: 100%;
+      border:1px solid #050505;
+      display:inline-block;
+      cursor:pointer;
+      color:#f7f4f7;
+      font-family:Arial;
+      font-size:17px;
+      padding:12px 35px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #1c1b1c;
+    transition: background-color 0.3s, color 0.3s; /* para animación suave */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* sombra un poco más fuerte al pasar el ratón */
+  }
+  
+  .btn-iniciar:hover {
+      background-color:#fafcf9;
+    color: #050505;
+    border-color: #050505;
+    
+  }
+  .btn-iniciar:active {
+      position:relative;
+      top:1px;
+    color: #050505;
+    background-color: #f7f4f7;
+  }
+  
+  .crearCuenta{
+    margin-top: justify;
+    text-align: center;
+    margin-bottom: justify;
+  }
+  
+  .btn-google {
+    background-color: #ffffff;
+    color: #555555;
+    border: 1px solid #dddddd;
+    border-radius: 28px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 20px;
+    text-transform: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra suave */
+  }
+  
+  .btn-google:hover {
+    background-color: #f7f7f7;
+    color: #222222;
+    border-color: #cccccc;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* sombra un poco más fuerte al pasar el ratón */
+  }
+  
+  .btn-google img {
+    margin-right: 8px;
+  }
+  
+  
+  .separator hr {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: none;
+    border-top: 1px solid #ccc; /* Color de la línea */
+  }
+  .separator span {
+    font-weight: 500; /* Hacer el "o" un poco más gordito */
+  }
+  
+  /* CODIGO DE LA PAGINA PRINCIPAL (mainPage)*/
+  
+  body.paginaPrincipal {
+    margin: 0;
+    background-color: #080e1b;
+    position: relative;
+    z-index: 0;
+  }
+  
+  /*color azulado: #162747  */
+  
+  /* Fondo animado extendido */
+  body.paginaPrincipal::before {
+    content: "";
+    position: absolute; /* Cambiado de fixed a absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Importante: usaremos 100% del contenido */
+    background-image: url('fondito.png');
+    background-repeat: repeat;
+    background-size: auto;
+    animation: moverFondo 30s linear infinite;
+    opacity: 0.10;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  @keyframes moverFondo {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 1000px 1000px;
+    }
+  }
+  
+  
+  
+  .empezarMP{
+    background-color: #f7f1f1;
+    border-radius: 28px;
+    transition: all 0.3s ease;
+  }
+  
+  .empezarMP:hover{
+    background-color: #a3a1a1;
+    border-color: #ccc;
+    color: #090909;
+  }
+  
+  .info-container{
+    color: #eceff6;
+  }
+  
+  .container-destacados{
+    color: #eceff6;
+  }
+  
+  .appWordBar{
+    color: #eceff6;
+    text-decoration: none;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .contactBar, .helpBar, .sesionBar{
+    color: #eceff6;
+    text-decoration: none;
+    text-align: right;
+    font-size: 16px;
+  }
+  
+  .primeraInfo{
+    color: #eceff6;
+  }
+  
+  /* FIN CODIGO MAIN PAGE */
+  
+  
+  /*ANIMACION REVEAL */
+  .reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  /* COOKIES ESTILOS*/
+  
+  /* Estilos generales para la página de Política de Cookies */
+  body.cookiesPage {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Cabecera */
+  .cookies-header {
+    background-color: #344a77;
+  }
+  
+  .cookies-header h1 {
+    font-size: 2.5em;
+    color: white;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Contenido Principal */
+  .cookies-content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .cookies-content h2 {
+    font-size: 1.75em; /* Igual tamaño que "Introducción" */
+    color: black; /* Títulos en color negro */
+    margin-bottom: 15px;
+  }
+  
+  .cookies-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .cookies-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .cookies-content ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  /* Enlaces */
+  a {
+    color: #344a77;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .cookies-footer {
+    background-color: #344a77;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+  }
+  
+  .cookies-footer p {
+    margin: 0;
+  }
+  
+  /* Diseño Responsivo */
+  @media (max-width: 768px) {
+    .cookies-header h1 {
+      font-size: 2em;
+    }
+  
+    .cookies-content h2 {
+      font-size: 1.5em;
+    }
+  
+    .cookies-content p,
+    .cookies-content ul li {
+      font-size: 1em;
+    }
+  }
+  
+  /* FIN COOKIES ESTILOS*/
+  
+  /*TERMINOS DE USO*/
+  
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Header */
+  .terms-header {
+    background-color: #344a77;
+    color: #fff;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .cookies-link {
+    color: #f7f7f7;
+    text-decoration: none;
+  }
+  
+  /* Card Styles */
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-header {
+    background-color: #344a77;
+    color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 15px;
+    background-color: white;
+    font-size: 1rem;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Footer */
+  .terms-footer {
+    background-color: #344a77;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card-header {
+        font-size: 1.25rem;
+    }
+  
+    .card-body {
+        font-size: 0.9rem;
+    }
+  }
+  /* FIN TERMINOS DE USO*/
+  
+  
+  /* PAGINA PUBLICACIONES*/
+  .app-header {
+    background-color: #5b90b3;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .app-title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  /* Estilos base para la sección de pestañas */
+  .section-tabs {
+    border-bottom: 1px solid #ccc;
+    background-color: #f8f9fa;
+  }
+  
+  /* Al pasar el mouse */
+  .seccion-btn:hover {
+    background-color: #e2e6ea;
+    transform: scale(1.05); /* Efecto de ampliación leve */
+    border-color: #545353;
+  }
+  
+  .seccion-btn {
+    border: 1px solid #000;
+    border-radius: 999px !important; /* Redondeado completo */
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    color: #000;
+    font-weight: 500;
+    margin: 0 8px;
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  /* Al hacer clic (efecto de pulsación) */
+  .seccion-btn:active {
+    transform: scale(0.97);
+    background-color: #5b90b3;
+    color: #ece2e2;
+  }
+  
+  /* Botón activo */
+  .seccion-btn.pulsado {
+    background-color: #5b90b3;
+    color: white;
+    border-color: #5b90b3;
+  }
+  
+  .publicacion {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+  }
+  
+  .contenido-publicacion {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .barra-persona {
+    background-color: #999a9c;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+  }
+  
+  .barra_abajo_publicacion{
+    border-top: 1px solid #ccc; /* Color y grosor de la línea */
+    padding-top: 1rem; /* Espacio para que no pegue el contenido a la línea */
+  }
+  
+  .comentario {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+  }
+  .respuesta {
+    margin-left: 20px;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  #boton-publicar {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #ff4081;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #boton-publicar:hover {
+    background-color: #ff80ab;
+  }
+  
+  .position-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .barraComentarios{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 8px 12px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin: 1.5rem -1.5rem -1.5rem -1.5rem;
+  }
+  
+  .btn_modo_oscuro{
+    margin-right: 10px;
+    margin-left: -100px;
+    border: 1px solid #000;
+    border-radius: 999px !important; /* Redondeado completo */
+    padding: 0.5rem 0.5rem;
+    background-color: transparent;
+    color: #000;
+    font-weight: 500;
+    transition: all 0.3s ease; /* Transición suave */
+  }
+  
+  .btn_modo_oscuro:hover {
+    background-color: #e2e6ea;
+    transform: scale(1.05); /* Efecto de ampliación leve */
+    border-color: #545353;
+  }
+  
+  .elementosTiempo{
+    color: #95a5a6;
+          font-size: 0.85rem;
+  }
